@@ -53,7 +53,7 @@ precip_2017 =
   relocate(year)
   
 ```
- Combine annual precipitation
+Combine annual precipitation
  
 ```{r}
 month_df = 
@@ -63,13 +63,18 @@ month_df =
   )
 precip_df = 
   bind_rows(precip_2018, precip_2017) 
-
-left_join(precip_df, month_df, by = "month")
+left_join(
+  precip_df, 
+  month_df, 
+  by = "month")
 ```
- 
-This dataset contains information from the Mr. Trashweel trash collector in Baltimore, MD. As trash enters the inner harbor, the trashwheel collects that trash and stores it in a dumptser. The dataset contains information on year, month, and trash collected, include some specific kinds of trash. There are a total of 'nrow(precip_df)'(24) rows in our final dataset. Additional data sheets include month precipitation data. 
 
-***include rest of info from question 1.  For available data, what was the total precipitation in 2018? What was the median number of sports balls in a dumpster in 2017?
+***rewrite code above to match what he did in class**
+
+This dataset contains information from the Mr. Trashweel trash collector in Baltimore, MD. As trash enters the inner harbor, the trashwheel collects that trash and stores it in a dumptser. The dataset contains information on year, month, and trash collected, include some specific kinds of trash. There are a total of 'nrow(precip_df)'(24) rows in our final dataset. Additional data sheets include month precipitation data.
+
+*****For the available data, the total precipitation in 2018 was XXXXXX, and the median number of sports balls in a dumpster in 2017 was XXX.**
+***include rest of info from question 1.  For available data, what was the total precipitation in 2018? What was the median number of sports balls in a dumpster in 2017?**
 
 ##Problem 2
 
